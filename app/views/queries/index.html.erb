@@ -1,0 +1,43 @@
+<h1>Listing queries for <%= params[:search] %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Country of Origin</th>
+    <th>Company</th>
+    <th>Status</th>
+    <th>Representative</th>
+    <th>Product</th>
+    <th>Amount</th>
+    <th>Destination</th>
+    <th>Budget</th>
+    <th>Shipping Type</th>
+    <th>Business Name</th>
+    <th>Order Details</th>
+    <th>Productinfo</th>
+  </tr>
+
+<% @queries.each do |query| %>
+  <tr>
+    <td><%= query.name %></td>
+    <td><%= query.email %></td>
+    <td><%= query.fromcountry %></td>
+    <td><%= query.company %></td>
+    <td><%= query.status %></td>
+    <td><%= query.rep %></td>
+    <td><%= query.product %></td>
+    <td><%= query.amount %></td>
+    <td><%= query.destination %></td>
+    <td><%= query.budget %></td>
+    <td><%= query.shippingtype %></td>
+    <td><%= query.businessname %></td>
+    <td><%= query.orderdetails %></td>
+    <td><%= query.productinfo %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Home', new_query_path %>

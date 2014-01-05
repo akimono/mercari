@@ -1,0 +1,15 @@
+ <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+  <% if session[:user] == nil %>
+<%= form_tag login_check_path, :method => 'post' do %>
+Username:<%= text_field_tag :user, params[:user] %><br>
+Password:<%= text_field_tag :password, params[:password] %>
+<%= submit_tag "Login", :name=> nil %>
+<% end %>
+<% else %>
+<% if session[:admin] == "yes" %>
+<%= link_to "Edit Users", users_path %>
+<% end %>
+<%= link_to "Show Queries", queries_search_path %>
+<% end %>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Dear <%= @query.name %>,</h1>
+    <p>
+      Your query has been updated. You can view the changes below at the following link:
+      <%= link_to "Query", {:controller => "queries", :action => "index", :search => @query.email } %>
+    </p>
+    <% if @query.rep? %>
+    <p>If you have any questions please send and email to <%= @query.rep %></p>
+    <% end %>
+    Thank you for your time and business,
+
+    -Mercari Team
+  </body>
+</html>

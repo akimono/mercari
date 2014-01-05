@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your query, <%= @query.name %></h1>
+    <p>
+      Your query will be assigned a representative to review it and to get you a quote. You will recieve emails throughout the process when any updates are made for your request. 
+
+      You can view the status of your active requests at any time by following the following link:<br><br>
+      <%= link_to "Query", {:controller => "queries", :action => "index", :search => @query.email } %>
+    </p>
+    <p>Thank you for using us and have a wonderful day</p>
+
+    -Mercari Team
+  </body>
+</html>

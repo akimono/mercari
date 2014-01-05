@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  fromcountry: MyString
+  company: MyString
+  status: MyString
+  rep: MyString
+  product: MyString
+  amount: MyString
+  destination: MyString
+  budget: MyString
+  shippingtype: MyString
+  businessname: MyString
+  orderdetails: MyText
+  file1: MyString
+  file2: MyString
+  file3: MyString
+  file4: MyString
+  productinfo: MyText
+
+two:
+  name: MyString
+  email: MyString
+  fromcountry: MyString
+  company: MyString
+  status: MyString
+  rep: MyString
+  product: MyString
+  amount: MyString
+  destination: MyString
+  budget: MyString
+  shippingtype: MyString
+  businessname: MyString
+  orderdetails: MyText
+  file1: MyString
+  file2: MyString
+  file3: MyString
+  file4: MyString
+  productinfo: MyText

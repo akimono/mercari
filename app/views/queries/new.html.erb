@@ -1,0 +1,75 @@
+<h1>New query</h1>
+
+<%= form_for(@query) do |f| %>
+  <% if @query.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@query.errors.count, "error") %> prohibited this query from being saved:</h2>
+
+      <ul>
+      <% @query.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+* required fields
+  <div class="field">
+    <%= f.label "Contact Name" %>*<br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>*<br />
+    <%= f.text_field :email %>
+  </div>
+   <div class="field">
+    <%= f.label "Confirm Email" %>*<br />
+    <%= f.text_field :email_confirmation %>
+  </div>
+    <div class="field">
+    <%= f.label "Business Name" %><br />
+    <%= f.text_field :businessname %>
+  </div>
+  <div class="field">
+    <%= f.label "Country of Origin" %>*<br />
+    <%= f.select :fromcountry, options_for_select([['United States', 'United States']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :product %>*<br />
+    <%= f.text_field :product %>
+  </div>
+    <div class="field">
+    <%= f.label "Manufacturer" %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %>*<br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label "Destination Port or Address" %>*<br />
+    <%= f.text_field :destination %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br />
+    <%= f.text_field :budget %>
+  </div>
+  <%= f.hidden_field :status, :value => "Recieved, Waiting for Representative" %>
+  <div class="field">
+    <%= f.label "Shipping Type" %>*<br />
+    <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Sea Less than Container', 'Sea Less than Container'], ['20 Foot Container', '20 Foot Container'], ['40 Foot Container', '40 Foot Container']]) %>
+  </div>
+  <div class="field">
+    <%= f.label "Product Information" %><br />
+    <%= f.text_area :productinfo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+<%= link_to "Query", {:controller => "queries", :action => "index", :search => "Janet@gmail.com" } %>
+<%= form_tag queries_path, :method => 'get' do %>
+<%= text_field_tag :search, params[:search] %>
+<%= submit_tag "search", :name=> nil %>
+<%end%>
+
+<%= link_to 'Back', queries_path %>

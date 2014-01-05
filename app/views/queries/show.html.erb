@@ -1,0 +1,101 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @query.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @query.email %>
+</p>
+
+<p>
+  <b>Country or Origin:</b>
+  <%= @query.fromcountry %>
+</p>
+<% if @query.company? %>
+<p>
+  <b>Manufacturer:</b>
+  <%= @query.company %>
+</p>
+<%end%>
+<p>
+  <b>Status:</b>
+  <%= @query.status %>
+</p>
+<% if @query.rep? %>
+<p>
+  <b>Representative:</b>
+  <%= @query.rep %>
+</p>
+<%end%>
+<p>
+  <b>Product:</b>
+  <%= @query.product %>
+</p>
+<% if @query.amount? %>
+<p>
+  <b>Amount:</b>
+  <%= @query.amount %>
+</p>
+<% end%>
+<p>
+  <b>Destination:</b>
+  <%= @query.destination %>
+</p>
+<% if @query.budget? %>
+<p>
+  <b>Budget:</b>
+  <%= @query.budget %>
+</p>
+<% end %>
+<p>
+  <b>Shippingtype:</b>
+  <%= @query.shippingtype %>
+</p>
+<% if @query.businessname? %>
+<p>
+  <b>Business Name: </b>
+  <%= @query.businessname %>
+</p>
+<%end%>
+<% if @query.orderdetails? %>
+<p>
+  <b>Orderdetails:</b>
+  <%= @query.orderdetails %>
+</p>
+<% end %>
+<% if @query.file1? %>
+<p>
+  <b>File1:</b>
+  <%= @query.file1 %>
+</p>
+<% end %>
+<% if @query.file2? %>
+<p>
+  <b>File2:</b>
+  <%= @query.file2 %>
+</p>
+<% end %>
+<% if @query.file3? %>
+<p>
+  <b>File3:</b>
+  <%= @query.file3 %>
+</p>
+<% end %>
+<% if @query.file4? %>
+<p>
+  <b>File4:</b>
+  <%= @query.file4 %>
+</p>
+<% end %>
+<% if @query.productinfo? %>
+<p>
+  <b>Productinfo:</b>
+  <%= @query.productinfo %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', edit_query_path(@query) %> |
+<%= link_to 'Home', new_query_path %>

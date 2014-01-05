@@ -1,0 +1,89 @@
+<%= form_for(@query) do |f| %>
+  <% if @query.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@query.errors.count, "error") %> prohibited this query from being saved:</h2>
+
+      <ul>
+      <% @query.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :fromcountry %><br />
+    <%= f.text_field :fromcountry %>
+  </div>
+  <div class="field">
+    <%= f.label :company %><br />
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :rep %><br />
+    <%= f.text_field :rep %>
+  </div>
+  <div class="field">
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :destination %><br />
+    <%= f.text_field :destination %>
+  </div>
+  <div class="field">
+    <%= f.label :budget %><br />
+    <%= f.text_field :budget %>
+  </div>
+  <div class="field">
+    <%= f.label :shippingtype %><br />
+    <%= f.text_field :shippingtype %>
+  </div>
+  <div class="field">
+    <%= f.label :businessname %><br />
+    <%= f.text_field :businessname %>
+  </div>
+  <div class="field">
+    <%= f.label :orderdetails %><br />
+    <%= f.text_area :orderdetails %>
+  </div>
+  <div class="field">
+    <%= f.label :file1 %><br />
+    <%= f.text_field :file1 %>
+  </div>
+  <div class="field">
+    <%= f.label :file2 %><br />
+    <%= f.text_field :file2 %>
+  </div>
+  <div class="field">
+    <%= f.label :file3 %><br />
+    <%= f.text_field :file3 %>
+  </div>
+  <div class="field">
+    <%= f.label :file4 %><br />
+    <%= f.text_field :file4 %>
+  </div>
+  <div class="field">
+    <%= f.label :productinfo %><br />
+    <%= f.text_area :productinfo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
