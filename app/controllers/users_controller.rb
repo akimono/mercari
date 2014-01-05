@@ -32,6 +32,9 @@ class UsersController < ApplicationController
   # GET /users/new
   # GET /users/new.json
   def new
+    if session[:user] == nil
+      redirect_to controller: 'queries' action: 'new'
+    else
     @user = User.new
 
     respond_to do |format|
@@ -39,6 +42,7 @@ class UsersController < ApplicationController
       format.json { render json: @user }
   end
   end
+end
 
   # GET /users/1/edit
   def edit
@@ -52,6 +56,9 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    if session[:user] == nil
+      redirect_to action: 'new'
+    else
     @user = User.new(params[:user])
 
     respond_to do |format|
@@ -63,6 +70,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
   end
+end
   end
 
   # PUT /users/1
