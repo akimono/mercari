@@ -33,7 +33,7 @@ class UsersController < ApplicationController
   # GET /users/new.json
   def new
     if session[:user] == nil
-      redirect_to controller: 'queries' action: 'new'
+      redirect_to controller: 'queries', action: 'new'
     else
     @user = User.new
 
