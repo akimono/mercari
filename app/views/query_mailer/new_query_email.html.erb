@@ -9,7 +9,7 @@
       Your query will be assigned a representative to review it and to get you a quote. You will receive emails throughout the process when any updates are made for your request. 
 
       You can view the status of your active requests at any time by following the following link:<br><br>
-      <%= url_for(controller: 'queries', action: 'index', search: @query.email, only_path: false ) %>
+      <%= url_for(controller: 'queries', action: 'index', search: @query.email, message: 'Your Queries', only_path: false ) %>
     </p>
     <p>Thank you for using us and have a wonderful day</p>
 
