@@ -28,8 +28,7 @@ config.action_mailer.smtp_settings = {
   :domain => 'mercari.herokuapp.com',
   :user_name => 'admin@mercariamerica.com',
   :password => 'Frank1985'
-  :endable_starttls_auto => true 
-}
+  :endable_starttls_auto => true }
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
