@@ -11,8 +11,8 @@
 Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login_logout_path %>
 <br><br>
 <%end%>
- <% if :notice %>
-    <div class="notice"><%= :notice %></div>
+ <% if session[:notice] %>
+    <div class="notice"><%= session[:notice] %></div>
   <% end %>
 <%= yield %>
 
