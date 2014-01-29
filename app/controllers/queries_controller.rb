@@ -57,8 +57,8 @@ end
     respond_to do |format|
       if @query.save
         QueryMailer.new_query_email(@query).deliver
-        format.html { redirect_to @query, notice: 'Query was successfully created.' }
-        format.json { render json: @query, notice: 'Query was successfully created', status: :created, location: @query }
+        format.html { redirect_to @query, action: "new", notice: 'Query was successfully created.' }
+        format.json { render json: @query, status: :created, location: @query }
       else
         format.html { render action: "new" }
         format.json { render json: @query.errors, status: :unprocessable_entity }
