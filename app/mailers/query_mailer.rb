@@ -6,6 +6,7 @@ class QueryMailer < ActionMailer::Base
   end
   def update_query_email(query)
   	@query = query
+  	@user = User.find (:first, :conditions => [ "username = ?", @query.rep])
   	mail(to: @query.email, supject: 'Your Query has Been Updated')
   end
 end
