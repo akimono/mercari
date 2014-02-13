@@ -75,10 +75,10 @@ end
       redirect_to action: 'new'
     else
     @query = Query.find(params[:id])
-
+    @user = User.find (:all, :conditions => ["username = ?", @query.rep])
     respond_to do |format|
       if @query.update_attributes(params[:query])
-        QueryMailer.update_query_email(@query).deliver
+        QueryMailer.update_query_email(@query, @user).deliver
         format.html { redirect_to @query, notice: 'Query was successfully updated.' }
         format.json { head :no_content }
       else
