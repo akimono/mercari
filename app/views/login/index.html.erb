@@ -4,7 +4,7 @@
   <% if session[:user] == nil %>
 <%= form_tag login_check_path, :method => 'post' do %>
 Username:<%= text_field_tag :user, params[:user] %><br>
-Password:<%= text_field_tag :password, params[:password] %>
+Password:<%= password_field_tag :password, params[:password] %>
 <%= submit_tag "Login", :name=> nil %>
 <% end %>
 <% else %>
