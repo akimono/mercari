@@ -10,7 +10,7 @@
       <%= url_for(controller: 'queries', action: 'index', search: @query.email, only_path: false ) %>
     </p>
     <% if @query.rep? %>
-    <p>If you have any questions please send an email to <%= @query.rep %></p>
+    <p>If you have any questions please send an email to <%= @query.rep %> at <%= @user.email %></p>
     <% end %>
     Thank you for your time and business,
 
