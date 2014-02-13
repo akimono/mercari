@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :rep %><br />
-    <%= f.select( :rep, @users.all.collect {|a| [a.username, a.username]}) %>
+    <%= f.select( :rep, @users.username %>
   </div>
   <div class="field">
     <%= f.label :product %><br />
