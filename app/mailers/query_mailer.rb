@@ -7,4 +7,5 @@ class QueryMailer < ActionMailer::Base
   def update_query_email(query)
   	@query = query
   	mail(to: @query.email, supject: 'Your Query has Been Updated')
+  end
 end
