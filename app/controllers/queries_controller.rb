@@ -46,6 +46,7 @@ class QueriesController < ApplicationController
       redirect_to action: 'new'
     else
     @query = Query.find(params[:id])
+    @users = User.all
   end
 end
 
