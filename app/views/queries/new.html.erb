@@ -1,4 +1,5 @@
-<h1>New query</h1>
+<table>
+  <tr><td width="400"><h1>Request a quote for a product</h1>
 <%= form_for(@query) do |f| %>
   <% if @query.errors.any? %>
     <div id="error_explanation">
@@ -11,13 +12,13 @@
       </ul>
     </div>
   <% end %>
-* required fields
+* denotes required fields
   <div class="field">
-    <%= f.label "Contact Name" %>*<br />
+    <%= f.label "Contact Name" %>*:
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :email %>*<br />
+    <%= f.label :email %>*:
     <%= f.text_field :email %>
   </div>
    <div class="field">
@@ -70,5 +71,7 @@
 <%= text_field_tag :search, params[:search] %>
 <%= submit_tag "search", :name=> nil %>
 <%end%>
-
+</td>
+<td width='400'> Place information about us here </td>
+</table> 
 <%= link_to 'Back', queries_path %>
