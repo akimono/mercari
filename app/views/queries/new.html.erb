@@ -22,44 +22,44 @@
     <%= f.text_field :email %>
   </div>
    <div class="field">
-    <%= f.label "Confirm Email" %>*<br />
+    *<%= f.label "Confirm Email" %>:<br />
     <%= f.text_field :email_confirmation %>
   </div>
     <div class="field">
-    <%= f.label "Business Name" %><br />
+    <%= f.label "Business Name" %>:<br />
     <%= f.text_field :businessname %>
   </div>
   <div class="field">
-    <%= f.label "Country of Origin" %>*<br />
+    *<%= f.label "Country of Origin" %>:<br />
     <%= f.select :fromcountry, options_for_select([['United States', 'United States']]) %>
   </div>
   <div class="field">
-    <%= f.label :product %>*<br />
+    *<%= f.label :product %>:<br />
     <%= f.text_field :product %>
   </div>
     <div class="field">
-    <%= f.label "Manufacturer" %><br />
+    <%= f.label "Manufacturer" %>:<br />
     <%= f.text_field :company %>
   </div>
   <div class="field">
-    <%= f.label :amount %>*<br />
+    *<%= f.label :amount %>:<br />
     <%= f.text_field :amount %>
   </div>
   <div class="field">
-    <%= f.label "Destination Port or Address" %>*<br />
+    *<%= f.label "Destination Port or Address" %>:<br />
     <%= f.text_field :destination %>
   </div>
   <div class="field">
-    <%= f.label :budget %><br />
+    <%= f.label :budget %>:<br />
     <%= f.text_field :budget %>
   </div>
   <%= f.hidden_field :status, :value => "Recieved, Waiting for Representative" %>
   <div class="field">
-    <%= f.label "Shipping Type" %>*<br />
+    *<%= f.label "Shipping Type" %>:<br />
     <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Sea Less than Container', 'Sea Less than Container'], ['20 Foot Container', '20 Foot Container'], ['40 Foot Container', '40 Foot Container']]) %>
   </div>
   <div class="field">
-    <%= f.label "Product Information" %><br />
+    <%= f.label "Product Information" %>:<br />
     <%= f.text_area :productinfo %>
   </div>
   <div class="actions">
