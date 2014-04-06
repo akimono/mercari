@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Mercari</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+   <%= stylesheet_link_tag    "queries", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -10,6 +10,9 @@
 	<% if session[:user] %>
 Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login_logout_path %>
 <br><br>
+<center>
+<%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
+<center>
 <%end%>
  <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
