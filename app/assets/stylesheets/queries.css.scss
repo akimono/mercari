@@ -15,7 +15,7 @@ text-decoration: none;
 }
 .main
 {
-	background-color:#dfcdcd;
+background-color:#dfcdcd;
 margin:0px 0px 0px 0px;
 text-decoration: none;
 opacity:0.95;
@@ -33,4 +33,9 @@ width:80px;
 height:53px;
 position:static;
 float:left;
+border-width:5px;
+}
+.banner
+{
+position:absolute;
 }
