@@ -17,15 +17,15 @@ Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53'%></div>
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div>
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div>
+<div class="banner" ><center> <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
+</center> </div>
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div>
 <div class="bgimage">
 	<%= image_tag "/assets/#{rand(2)}.jpg", :width => '1500' %>
 </div>
-<div class="banner" >
-<center>
-<%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
-</center>
-</div>
+
+
+
  <% if flash[:notice] %>
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
