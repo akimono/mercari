@@ -7,27 +7,29 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<table><tr><td width="300">
+<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/vietnam1.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26'%></div>
+<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
+</td>
+<td width="400">
+ <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
+</td>
+<td width="300">
+<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div></td>
+</table>
 	<% if session[:user] %>
 Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login_logout_path %>
 <br><br>
 
 <%end%><center>
-<table><tr><td width="300">
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div>
-<div class="lmaps"> <%= image_tag "/assets/vietnam1.png", :width => '80', :height => '53' %></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53'%></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div></td>
-<td width="400">
-<div class="banner" ><center> <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
-</center> </div></td>
-<td width="300">
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '80', :height => '53' %></div></td>
-</table></center>
+
 <div class="bgimage">
 	<%= image_tag "/assets/#{rand(2)}.jpg", :width => '1500' %>
 </div>
-
+<center>
 
 
  <% if flash[:notice] %>
@@ -37,5 +39,6 @@ Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login
   
 <%= yield %>
 </div>
+</center>
 </body>
 </html>
