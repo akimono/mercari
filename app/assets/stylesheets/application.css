@@ -11,9 +11,4 @@
  *= require_self
  *= require_tree .
  */
-body
-{
-background-color:#ffd7d7;
-margin:0px 0px 0px 0px;
-text-decoration: none;
-}
+
