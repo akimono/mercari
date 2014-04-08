@@ -11,15 +11,24 @@
 	<table><tr><td width="300">
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
 <div class="lmaps"> <%= image_tag "/assets/vietnam1.png", :width => '40', :height => '26' %></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26'%></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/bra.png", :width => '40', :height => '26'%></div>
+<div class="lmaps"> <%= image_tag "/assets/fra.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/sau.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/ita.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/kor.png", :width => '40', :height => '26' %></div>
 </td>
 <td width="400">
  <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
 </td>
 <td width="300">
-<div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div></td>
+<div class="lmaps"> <%= image_tag "/assets/chi.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/ind.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/ger.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/jap.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/rus.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/spa.png", :width => '40', :height => '26' %></div>
+<div class="lmaps"> <%= image_tag "/assets/tha.png", :width => '40', :height => '26' %></div>
+</td>
 </table></center>
 	<% if session[:user] %>
 Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login_logout_path %>
@@ -28,7 +37,7 @@ Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login
 <%end%>
 
 <div class="bgimage">
-	<%= image_tag "/assets/#{rand(2)}.jpg", :width => '1500' %>
+	<%= image_tag "/assets/#{rand(22)}.jpg", :width => '1500' %>
 </div>
 <center>
 
