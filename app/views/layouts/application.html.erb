@@ -29,9 +29,8 @@ Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login
     <div class="notice"><%= flash[:notice] %></div>
   <% end %>
   <div class="main">
-  </div>
-  <div class="maintxt">
-  </div>
+  
 <%= yield %>
+</div>
 </body>
 </html>
