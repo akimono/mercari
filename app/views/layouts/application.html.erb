@@ -8,7 +8,7 @@
 </head>
 <body>
 	<center>
-	<table><tr><td width="300"><left>
+	<table><tr><td width="300">
 <div class="lmaps"> <%= image_tag "/assets/usa1.png", :width => '40', :height => '26' %></div>
 <div class="lmaps"> <%= image_tag "/assets/vietnam1.png", :width => '40', :height => '26' %></div>
 <div class="lmaps"> <%= image_tag "/assets/bra.png", :width => '40', :height => '26'%></div>
@@ -16,12 +16,12 @@
 <div class="lmaps"> <%= image_tag "/assets/sau.png", :width => '40', :height => '26' %></div>
 <div class="lmaps"> <%= image_tag "/assets/ita.png", :width => '40', :height => '26' %></div>
 <div class="lmaps"> <%= image_tag "/assets/kor.png", :width => '40', :height => '26' %></div>
-</left>
+
 </td>
 <td width="400">
  <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
 </td>
-<td width="300">
+<td width="300"><left>
 <div class="rmaps"> <%= image_tag "/assets/chi.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/ind.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/ger.png", :width => '40', :height => '26' %></div>
@@ -29,6 +29,7 @@
 <div class="rmaps"> <%= image_tag "/assets/rus.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/spa.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/tha.png", :width => '40', :height => '26' %></div>
+</left>
 </td>
 </table></center>
 	<% if session[:user] %>

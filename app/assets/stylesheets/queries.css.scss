@@ -10,7 +10,7 @@ text-decoration: none;
 .bgimage
 {
 	position:absolute;
-	top:90px;
+	top:100px;
 	z-index:-1;
 }
 .main
@@ -21,7 +21,7 @@ text-decoration: none;
 opacity:0.95;
 width:800px;
 height:100%;
-top:80;
+top:90;
 }
 
 .lmaps
@@ -31,7 +31,7 @@ width:40px;
 height:26px;
 position:relative;
 float:left;
-padding:0px 5px 0px;
+padding:5px 5px 5px;
 }
 .rmaps
 {
@@ -40,5 +40,5 @@ width:40px;
 height:26px;
 position:relative;
 float:right;
-padding:0px 5px 0px;
+padding:5px 5px 5px;
 }
