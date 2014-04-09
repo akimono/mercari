@@ -117,4 +117,7 @@ end
     @queries = Query.order(updated_at: :desc).find(:all, :conditions =>[ "#{params[:condition]} LIKE ? ", params[:search] ])
   end
 end
+def lang
+  redirect_to action: 'new'
+end
 end
