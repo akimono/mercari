@@ -10,7 +10,7 @@ text-decoration: none;
 .bgimage
 {
 	position:absolute;
-	top:100px;
+	top:110px;
 	z-index:-1;
 }
 .main
@@ -22,6 +22,8 @@ opacity:0.95;
 width:800px;
 height:100%;
 top:90;
+border-width:1px;
+border-style:double;
 }
 
 .lmaps
