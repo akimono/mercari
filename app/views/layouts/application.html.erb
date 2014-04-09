@@ -29,7 +29,7 @@ function googleTranslateElementInit() {
  <%= image_tag "/assets/banner.gif", :border=>'0', :alt => nil %>
 </td>
 <td width="300"><left>
-<div class="rmaps"> <%= link_to(image_tag ("/assets/chi.png", :width => '40', :height => '26') "/#googtrans(en|fr)" %></div>
+<div class="rmaps"> <%= link_to "http://www.mercari.herokuapp.com/#googtrans(en|fr)" do %> <%= image_tag ("/assets/chi.png", :width => '40', :height => '26') %></div> <%end%>
 <div class="rmaps"> <%= image_tag "/assets/ind.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/ger.png", :width => '40', :height => '26' %></div>
 <div class="rmaps"> <%= image_tag "/assets/jap.png", :width => '40', :height => '26' %></div>
