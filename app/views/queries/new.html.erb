@@ -60,17 +60,12 @@
   </div>
   <div class="field">
     <%= f.label "Product Information" %>:<br />
-    <%= f.text_area :productinfo %>
+    <%= f.text_area :productinfo, :size => "20x10" %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
-<%= link_to "Query", {:controller => "queries", :action => "index", :search => "Janet@gmail.com" } %>
-<%= form_tag queries_path, :method => 'get' do %>
-<%= text_field_tag :search, params[:search] %>
-<%= submit_tag "search", :name=> nil %>
-<%end%>
 </td>
 <td width='400'> Place information about us here </td>
 </table> 
