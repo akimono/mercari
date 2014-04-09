@@ -12,6 +12,7 @@ text-decoration: none;
 	position:absolute;
 	top:110px;
 	z-index:-1;
+	width:100%;
 }
 .main
 {
@@ -23,7 +24,7 @@ width:800px;
 height:100%;
 top:90;
 border-width:1px;
-border-style:double;
+border-style:solid;
 }
 
 .lmaps
