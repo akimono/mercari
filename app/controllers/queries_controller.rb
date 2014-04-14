@@ -118,7 +118,7 @@ end
   end
 end
 def lang
-  encoded_url = URI.encode('http://mercari.herokuapp.com/#googtrans(en|zh-CH)')
-  redirect_to URI.parse(encoded_url)
+  encoded_url = URI.parse('http://mercari.herokuapp.com/#googtrans(en|zh-CH)')
+  redirect_to encoded_url
 end
 end
