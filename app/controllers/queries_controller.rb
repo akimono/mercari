@@ -118,6 +118,6 @@ end
   end
 end
 def lang
-  redirect_to string: 'http://mercari.herokuapp.com/#googtrans(en|zh-CH)'
+  redirect_to 'http://mercari.herokuapp.com/#googtrans(en|zh-CH)'
 end
 end
