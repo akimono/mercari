@@ -2,6 +2,7 @@ Mercari::Application.routes.draw do
   resources :users
 get "queries/search"
 get "queries/result"
+get "queries/lang"
   resources :queries
 get "login/index"
 post "login/check"
