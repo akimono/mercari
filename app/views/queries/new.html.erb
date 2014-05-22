@@ -53,7 +53,7 @@
     <%= f.label :budget %>:<br />
     <%= f.text_field :budget %>
   </div>
-  <%= f.hidden_field :status, :value => "Recieved, Waiting for Representative" %>
+  <%= f.hidden_field :status, :value => "Recieved" %>
   <div class="field">
     *<%= f.label "Shipping Type" %>:<br />
     <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Sea Less than Container', 'Sea Less than Container'], ['20 Foot Container', '20 Foot Container'], ['40 Foot Container', '40 Foot Container']]) %>

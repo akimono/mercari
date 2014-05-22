@@ -114,7 +114,7 @@ end
     if session[:user] == nil
       redirect_to action: 'new'
     else
-    @queries = Query.order(updated_at: :desc).find(:all, :conditions =>[ "#{params[:condition]} LIKE ? ", params[:search] ])
+    @queries = Query.find(:all, :conditions =>[ "#{params[:condition]} LIKE ? ", params[:search] ])
   end
 end
 def lang
