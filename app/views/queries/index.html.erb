@@ -17,7 +17,7 @@
     <td><%= query.id %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
-    <td><%= query.rep %><% if query.rep.empty? %> Awaiting Representative <% end %></td>
+    <td><%= query.rep %><% if query.rep.blank? %> Awaiting Representative <% end %></td>
     <td><%= query.product %></td>
     <td><%= query.destination %></td>
     <td><%= query.shippingtype %></td>
