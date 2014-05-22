@@ -58,7 +58,7 @@ end
     respond_to do |format|
       if @query.save
         QueryMailer.new_query_email(@query).deliver
-        flash[:notice] = 'Query was successfully created.'
+        flash[:notice] = 'Your query was successfully created. You should receive an email confirmation shortly'
         format.html { redirect_to action: "new" }
         format.json { render json: @query, status: :created, location: @query }
       else
@@ -78,7 +78,7 @@ end
     respond_to do |format|
       if @query.update_attributes(params[:query])
         QueryMailer.update_query_email(@query).deliver
-        format.html { redirect_to @query, notice: 'Query was successfully updated.' }
+        format.html { redirect_to @query, notice: 'Your query was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
