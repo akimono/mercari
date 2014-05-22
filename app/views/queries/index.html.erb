@@ -1,6 +1,6 @@
 <h1> <%= params[:search] %>'s Active Queries</h1>
-
-<table width="800">
+<center>
+<table width="800" align="center">
   <tr>
     <th>Query ID</th>
     <th>Country of Origin</th>
@@ -17,7 +17,7 @@
     <td><%= query.id %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
-    <td><%= query.rep %></td>
+    <td><%= query.rep %><% if query.rep.empty? do %>Awaiting Representative<%end%></td>
     <td><%= query.product %></td>
     <td><%= query.destination %></td>
     <td><%= query.shippingtype %></td>
@@ -25,7 +25,7 @@
   </tr>
 <% end %>
 </table>
-
+</center>
 <br />
 
 <%= link_to 'Home', new_query_path %>
