@@ -7,24 +7,17 @@
 <%end%>
 <table width="800">
   <tr>
-    <th>Name</th>
     <th>Email</th>
     <th>Fromcountry</th>
-    <th>Company</th>
     <th>Status</th>
     <th>Rep</th>
     <th>Product</th>
     <th>Amount</th>
     <th>Destination</th>
-    <th>Budget</th>
-    <th>Shippingtype</th>
     <th>Businessname</th>
     <th>Orderdetails</th>
-    <th>File1</th>
-    <th>File2</th>
-    <th>File3</th>
-    <th>File4</th>
-    <th>Productinfo</th>
+    <th>Language</th>
+    <th>Service Type</th>
     <th></th>
     <th></th>
     <th></th>
@@ -32,24 +25,17 @@
 
 <% @queries.each do |query| %>
   <tr>
-    <td><%= query.name %></td>
     <td><%= query.email %></td>
     <td><%= query.fromcountry %></td>
-    <td><%= query.company %></td>
     <td><%= query.status %></td>
     <td><%= query.rep %></td>
     <td><%= query.product %></td>
     <td><%= query.amount %></td>
     <td><%= query.destination %></td>
-    <td><%= query.budget %></td>
-    <td><%= query.shippingtype %></td>
     <td><%= query.businessname %></td>
     <td><%= query.orderdetails %></td>
     <td><%= query.file1 %></td>
     <td><%= query.file2 %></td>
-    <td><%= query.file3 %></td>
-    <td><%= query.file4 %></td>
-    <td><%= query.productinfo %></td>
     <td><%= link_to 'Show', query %></td>
     <td><%= link_to 'Edit', edit_query_path(query) %></td>
     <td><%= link_to 'Destroy', query, method: :delete, data: { confirm: 'Are you sure?' } %></td>
