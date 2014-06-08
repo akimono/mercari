@@ -41,6 +41,7 @@ function googleTranslateElementInit() {
 </table></center>
 	<% if session[:user] %>
 Welcome you are logged in as: <%= session[:user] %> <%= link_to "Log Out", login_logout_path %>
+<%= link_to "queries", search_queries_path %>
 <br><br>
 
 <%end%>
