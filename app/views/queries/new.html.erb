@@ -30,11 +30,11 @@
     <%= f.text_field :businessname %>
   </div>
   <div class="field">
-    *<%= f.label "Service Type" %>:<br />
+    *<%= f.label "Service wanted" %>:<br />
     <%= f.select :file2, options_for_select([['Buying Agent', 'Buying Agent'], ['Importation', 'Importation'], ['Exportation', 'Exportation']]) %>
   </div>
   <div class="field">
-    *<%= f.label "Country of Origin" %>:
+    *<%= f.label "Service Country" %>:
     <%= f.select :fromcountry, options_for_select([['United States', 'United States']]) %>
   </div>
   <div class="field">
