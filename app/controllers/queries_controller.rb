@@ -114,6 +114,11 @@ end
     if session[:user] == nil
       redirect_to action: 'new'
     else
+      @queries = Query.find(:all, :conditions =>["#{params[:condition]} LIKE ?", params[:search]])
   end
+end
+def lang
+  encoded_url = URI.parse('http://mercari.herokuapp.com/#googtrans(en|zh-CH)')
+  redirect_to encoded_url
 end
 end
