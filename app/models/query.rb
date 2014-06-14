@@ -10,5 +10,5 @@ def self.search(search)
 	else
 		find(:all)
 	end
-
+    end
 end
