@@ -1,7 +1,9 @@
 <h1>Listing queries</h1>
 <%= form_tag queries_result_path, :method => 'get' do %>
 <br>
-
+<%= select_tag "condition", options_for_select([["Email", "email"],["Representative", "rep"],["Buyer Name", "name"],["Status", "status"], ["Shipping Type", "shippingtype"],["From Country", "fromcountry"]], params[:condition]) %>
+<%= text_field_tag :search, params[:search] %>
+<%= submit_tag "search", :name=> nil %>
 <%end%>
 <table width="800">
   <tr>
