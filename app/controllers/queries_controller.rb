@@ -114,7 +114,7 @@ end
     if session[:user] == nil
       redirect_to action: 'new'
     else
-    @queries = Query.find(:all, :conditions =>[ "#{params[:condition]} LIKE ? ", params[:search] ])
+    @queries = Query.search(params[:search])
   end
 end
 def lang
