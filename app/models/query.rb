@@ -4,11 +4,4 @@ validates :amount, :name, :destination, :product, :shippingtype, :fromcountry, p
 validates :email, confirmation: true, presence: true, length: { minimum: 3}
 validates :email_confirmation, presence: true, :on => :create
 
-def self.search(search)
-	if search
-		find (:all, :conditions => ['name Like ?', "%#{search}%"])
-	else
-		find(:all)
-	end
-    end
 end
