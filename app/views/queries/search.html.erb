@@ -7,8 +7,9 @@
 <%end%>
 <table width="800">
   <tr>
+    <th>Id </th>
     <th>Email</th>
-    <th>Fromcountry</th>
+    <th>Service Country</th>
     <th>Status</th>
     <th>Rep</th>
     <th>Orderdetails</th>
@@ -21,6 +22,7 @@
 
 <% @queries.each do |query| %>
   <tr>
+    <td><%= query.id %></td>
     <td><%= query.email %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
