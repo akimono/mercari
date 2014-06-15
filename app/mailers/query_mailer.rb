@@ -8,5 +8,6 @@ class QueryMailer < ActionMailer::Base
   def update_query_email(query)
   	@query = query
   	mail(to: @query.email, subject: 'Your Query has Been Updated')
+  	mail(to: @query.rep.match(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i)[0]), subject: "you have a query")
   end
 end
