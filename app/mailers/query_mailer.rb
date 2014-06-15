@@ -3,11 +3,9 @@ class QueryMailer < ActionMailer::Base
   def new_query_email(query)
   	@query = query
   	mail(to: @query.email, subject: 'Your Query has Successfully Been Created')
-  	mail(to: admin@mercariamerica.com, subject: "new query")
-  end
+  	end
   def update_query_email(query)
   	@query = query
   	mail(to: @query.email, subject: 'Your Query has Been Updated')
-  	mail(to: admin@mercariamerica.com, subject: 'Update to query assigned to you')
   end
 end
