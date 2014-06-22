@@ -5,9 +5,15 @@
 <%= text_field_tag :search, params[:search] %>
 <%= submit_tag "search", :name=> nil %>
 <%end%>
+<STYLE TYPE="text/css">
+<!--
+TD{font-family: Arial; font-size: 10pt;}
+--->
+</STYLE>
 <table width="800">
   <tr>
     <th>Id </th>
+    <th>Update </th>
     <th>Email</th>
     <th>Service Country</th>
     <th>Status</th>
@@ -23,6 +29,7 @@
 <% @queries.each do |query| %>
   <tr>
     <td><%= query.id %></td>
+    <td><%= query.updated_at %></td>
     <td><%= query.email %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
