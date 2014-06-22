@@ -13,7 +13,7 @@ TD{font-family: Arial; font-size: 10pt;}
 <table width="800">
   <tr>
     <th>Id </th>
-    <th>Update </th>
+    <th>Created </th>
     <th>Email</th>
     <th>Service Country</th>
     <th>Status</th>
@@ -29,7 +29,7 @@ TD{font-family: Arial; font-size: 10pt;}
 <% @queries.each do |query| %>
   <tr>
     <td><%= query.id %></td>
-    <td><%= truncate(query.updated_at, :omission => "", :length => 15 )%></td>
+    <td><%= query.created_at %></td>
     <td><%= query.email %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
