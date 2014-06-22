@@ -29,7 +29,7 @@ TD{font-family: Arial; font-size: 10pt;}
 <% @queries.each do |query| %>
   <tr>
     <td><%= query.id %></td>
-    <td><%= truncate(query.updated_at, :omission => "", :legnth => 15 )%></td>
+    <td><%= truncate(query.updated_at, :omission => "", :length => 15 )%></td>
     <td><%= query.email %></td>
     <td><%= query.fromcountry %></td>
     <td><%= query.status %></td>
