@@ -12,7 +12,7 @@
       </ul>
     </div>
   <% end %>
-* required fields
+* required fields (example filled in)
   <div class="field">
     *<%= f.label "Contact Name" %>:<br />
     <%= f.text_field :name, :value => 'Your Full Name'  %>
@@ -31,11 +31,11 @@
   </div>
     <div class="field">
     *<%= f.label "Service wanted" %>:<br />
-    <%= f.select :file2, options_for_select([['Buying Agent', 'Buying Agent'], ['Importation', 'Importation'], ['Exportation', 'Exportation']]) %>
+    <%= f.select :file2, options_for_select([['Buying Agent', 'Buying Agent in'], ['Importation', 'Importation from'], ['Exportation', 'Exportation from']]) %>
   </div>
   <div class="field">
     *<%= f.label "Service Country" %>:
-    <%= f.select :fromcountry, options_for_select([['United States', 'United States']]) %>
+    <%= f.select :fromcountry, options_for_select([['United States', 'The United States']]) %>
   </div>
   <div class="field">
     *<%= f.label :product %>:<br />
@@ -51,7 +51,7 @@
   </div>
   <div class="field">
     *<%= f.label " Destination Port or Address" %>:<br />
-    <%= f.text_field :destination, :value => '123 fake street, Siena, Italy postal code 53100' %>
+    <%= f.text_field :destination, :value => 'Siena, Italy postal code 53100' %>
   </div>
   <div class="field">
     <%= f.label :budget %>:<br />
@@ -68,7 +68,7 @@
   </div>
   <div class="field">
     <%= f.label "Product Information" %>:<br />
-    <%= f.text_area :productinfo, :size => "20x4", :value => 'I need 600 medium size pogo sticks, model number 1234567 made by pogo to go. No accessories needed, black color preferred' %>
+    <%= f.text_area :productinfo, :size => "20x4", :value => 'Medium size, model number 1234567, black color preferred' %>
   </div>
   <div class="actions">
     <%= f.submit %>
