@@ -27,15 +27,15 @@
   </div>
     <div class="field">
     <%= f.label "Business Name" %>:<br />
-    <%= f.text_field :businessname, :value => 'Company Corporation LTD.' %>
+    <%= f.text_field :businessname, :value => 'Fun Company Corporation LTD.' %>
   </div>
-  <div class="field">
+    <div class="field">
     *<%= f.label "Service wanted" %>:<br />
-    <%= f.select :file2, options_for_select([['Buying Agent', 'Buying Agent in'], ['Importation', 'Importation from'], ['Exportation', 'Exportation from']]) %>
+    <%= f.select :file2, options_for_select([['Buying Agent', 'Buying Agent'], ['Importation', 'Importation'], ['Exportation', 'Exportation']]) %>
   </div>
   <div class="field">
-    *<%= f.label %>
-    <%= f.select :fromcountry, options_for_select([['United States', 'The United States']]) %>
+    *<%= f.label "Service Country" %>:
+    <%= f.select :fromcountry, options_for_select([['United States', 'United States']]) %>
   </div>
   <div class="field">
     *<%= f.label :product %>:<br />
