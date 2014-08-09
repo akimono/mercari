@@ -99,7 +99,7 @@ end
     @query.destroy
 
     respond_to do |format|
-      format.html { redirect_to queries_url }
+      format.html { redirect_to queries_search_url }
       format.json { head :no_content }
     end
   end
