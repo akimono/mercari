@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Gracias por su consulta, <%= @query.name %></h1>
+    <p>
+      Su consulta se le asignará un representante de revisarlo y para conseguirle una cita. Usted recibirá mensajes de correo electrónico en todo el proceso cuando las actualizaciones se hacen para su solicitud. 
+
+       Puede ver el estado de sus solicitudes activas en cualquier momento siguiendo el siguiente enlace:<br><br>
+      <% URI.unescape(url_for(controller: 'queries', action: 'index', search: @query.email, param: @query.file1, only_path: false )) %>
+      http://mercari.herokuapp.com/queries?search=<%= @query.email.gsub(/@/, '%40') %>&param=<%= @query.file1 %><br>
+    </p>
+    <p>Gracias por usar nosotros y tener un día maravilloso</p>
+
+    -Equipo Mercari 
+  </body>
+</html>
