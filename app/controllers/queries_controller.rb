@@ -57,11 +57,15 @@ end
 
     respond_to do |format|
       if @query.save
+        if @query.file1 == '#googtrans(en|es)'
+          QueryMailer.new_spanish_query_email(@query).deliver
+        else
         QueryMailer.new_query_email(@query).deliver
         QueryMailer.admin_query_email(@query).deliver
         flash[:notice] = 'Your query was successfully created. You should receive an email confirmation shortly'
         format.html { redirect_to action: "new" }
         format.json { render json: @query, status: :created, location: @query }
+        end
       else
         format.html { render action: "new" }
         format.json { render json: @query.errors, status: :unprocessable_entity }
