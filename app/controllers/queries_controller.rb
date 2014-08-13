@@ -86,9 +86,15 @@ end
     @query = Query.find(params[:id])
     respond_to do |format|
       if @query.update_attributes(params[:query])
+        if @query.file1 == '#googtrans(en|es)'
+          QueryMailer.update_spanish_query_email(@query).deliver
+          format.html { redirect_to @query, notice: 'Your query was successfully updated.' }
+          format.json { head :no_content }
+        else
         QueryMailer.update_query_email(@query).deliver
         format.html { redirect_to @query, notice: 'Your query was successfully updated.' }
         format.json { head :no_content }
+      end
       else
         format.html { render action: "edit" }
         format.json { render json: @query.errors, status: :unprocessable_entity }
