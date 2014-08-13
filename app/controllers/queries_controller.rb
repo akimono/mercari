@@ -59,6 +59,10 @@ end
       if @query.save
         if @query.file1 == '#googtrans(en|es)'
           QueryMailer.new_spanish_query_email(@query).deliver
+          QueryMailer.admin_query_email(@query).deliver
+        flash[:notice] = 'Su petición se ha creado correctamente. Usted debe recibir una confirmación por correo electrónico en breve.'
+        format.html { redirect_to action: "new" }
+        format.json { render json: @query, status: :created, location: @query }
         else
         QueryMailer.new_query_email(@query).deliver
         QueryMailer.admin_query_email(@query).deliver
