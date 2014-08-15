@@ -19,7 +19,7 @@
   </div>
   <div class="field">
     *<%= f.label :email %>:<br />
-    <%= f.text_field :email, :value => 'youremail@example.com' %>
+    <%= f.text_field :email %>
   </div>
    <div class="field">
     *<%= f.label "Confirm Email" %>:<br />
@@ -27,7 +27,7 @@
   </div>
     <div class="field">
     <%= f.label "Business Name" %>:<br />
-    <%= f.text_field :businessname, :value => 'Fun Company Corporation LTD.' %>
+    <%= f.text_field :businessname %>
   </div>
     <div class="field">
     *<%= f.label "Service wanted" %>:<br />
@@ -39,25 +39,25 @@
   </div>
   <div class="field">
     *<%= f.label :product %>:<br />
-    <%= f.text_field :product, :value => 'Pogo Sticks' %>
+    <%= f.text_field :product %>
   </div>
     <div class="field">
     <%= f.label "Manufacturer" %>:<br />
-    <%= f.text_field :company, :value => 'Pogo to go' %>
+    <%= f.text_field :company %>
   </div>
   <div class="field">
     *<%= f.label :amount %>:<br />
-    <%= f.text_field :amount, :value => '600 sticks' %>
+    <%= f.text_field :amount %>
   </div>
   <div class="field">
     *<%= f.label " Destination Port or Address" %>:<br />
-    <%= f.text_field :destination, :value => 'Siena, Italy postal code 53100' %>
+    <%= f.text_field :destination %>
   </div>
   <div class="field">
     <%= f.label :budget %>:<br />
-    <%= f.text_field :budget, :value => '12,000 US dollars' %>
+    <%= f.text_field :budget %>
   </div>
-  <%= f.hidden_field :status, :value => "Recieved" %>
+  <%= f.hidden_field :status %>
   <div class="field">
     *<%= f.label "Shipping Type" %>:<br />
     <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Sea Less than Container', 'Sea Less than Container'], ['20 Foot Container', '20 Foot Container'], ['40 Foot Container', '40 Foot Container']]) %>
@@ -68,7 +68,7 @@
   </div>
   <div class="field">
     <%= f.label "Product Information" %>:<br />
-    <%= f.text_area :productinfo, :size => "20x4", :value => 'Medium size, model number 1234567, black color preferred' %>
+    <%= f.text_area :productinfo, :size => "20x4" %>
   </div>
   <div class="actions">
     <%= f.submit %>
