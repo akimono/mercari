@@ -7,7 +7,7 @@
     <h1>Estimado <%= @query.name %>,</h1>
     <p>
       Su consulta se ha actualizado. Usted puede ver los cambios siguientes en el siguiente enlace:
-      <%= url_for(controller: 'queries', action: 'index', search: @query.email, only_path: false ) %>
+      <%= url_for(controller: 'queries', action: 'index', search: @query.email, param: @query.file1, only_path: false ) %>
     </p>
     <% if @query.rep? %>
     <p>Si usted tiene alguna pregunta por favor envíe un correo electrónico a<%= @query.rep %></p>
