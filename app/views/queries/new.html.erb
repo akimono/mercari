@@ -29,6 +29,10 @@
     <%= f.label "Business Name" %>:<br />
     <%= f.text_field :businessname %>
   </div>
+  <div class="field">
+    *<%= f.label "Phone Number (with country code)" %>:<br />
+    <%= f.text_field :file3 %>
+  </div>
     <div class="field">
     *<%= f.label "Service wanted" %>:<br />
     <%= f.select :file2, options_for_select([['Buying Agent in', 'Buying Agent'], ['Importation from', 'Importation'], ['Exportation from', 'Exportation']]) %>
@@ -54,7 +58,7 @@
     <%= f.text_field :destination %>
   </div>
   <div class="field">
-    <%= f.label :budget %>:<br />
+    *<%= f.label :budget %>:<br />
     <%= f.text_field :budget %>
   </div>
   <%= f.hidden_field :status %>
