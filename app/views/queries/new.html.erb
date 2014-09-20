@@ -35,11 +35,10 @@
   </div>
     <div class="field">
     *<%= f.label "Service wanted" %>:<br />
-    <%= f.select :file2, options_for_select([['Buying Agent in', 'Buying Agent'], ['Importation from', 'Importation'], ['Exportation from', 'Exportation']]) %>
+    <%= f.select :file2, options_for_select([['Buying Agent in', 'Buying Agent'], ['Importation to', 'Importation'], ['Exportation from', 'Exportation']]) %>
   </div>
   <div class="field">
-    *<%= f.label "Service Country" %>:
-    <%= f.select :fromcountry, options_for_select([['The United States', 'United States']]) %>
+    *<%= f.select :fromcountry, options_for_select([['The United States', 'United States']]) %>
   </div>
   <div class="field">
     *<%= f.label :product %>:<br />
