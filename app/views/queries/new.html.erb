@@ -31,7 +31,7 @@
   </div>
   <div class="field">
     *<%= f.label "Phone Number (with country code)" %>:<br />
-    <%= f.text_field :file3 %>
+    <%= f.telephone_field :file3 %>
   </div>
     <div class="field">
     *<%= f.label "Service wanted" %>:<br />
@@ -58,8 +58,8 @@
     <%= f.text_field :destination %>
   </div>
   <div class="field">
-    *<%= f.label :budget %>:<br />
-    <%= f.text_field :budget %>
+    *<%= f.label :budget %>(in US dollars):<br />
+    <%= f.number_field :budget, in: 150...100000000  %>
   </div>
   <%= f.hidden_field :status %>
   <div class="field">
