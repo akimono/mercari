@@ -1,4 +1,4 @@
-<h1> <%= @queries.name %>'s Active Queries</h1>
+<h1> <% @queries.each do |query| %> <%= query.name %>'s Active Queries</h1> <% end %>
 <center>
 <table width="800" align="center">
   <tr>
