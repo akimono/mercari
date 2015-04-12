@@ -38,7 +38,7 @@
     <%= f.select :file2, options_for_select([['Buying Agent in', 'Buying Agent'], ['Importation to', 'Importation'], ['Exportation from', 'Exportation']]) %>
   </div>
   <div class="field">
-    *<%= f.select :fromcountry, options_for_select([['The United States', 'United States']]) %>
+    *<%= f.select :fromcountry, options_for_select([['Japan', 'Japan'],['The United States', 'United States']]) %>
   </div>
   <div class="field">
     *<%= f.label :product %>:<br />
@@ -63,7 +63,7 @@
   <%= f.hidden_field :status %>
   <div class="field">
     *<%= f.label "Shipping Type" %>:<br />
-    <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Sea Less than Container', 'Sea Less than Container'], ['20 Foot Container', '20 Foot Container'], ['40 Foot Container', '40 Foot Container']]) %>
+    <%= f.select :shippingtype, options_for_select([['Air Freight', 'Air Freight'], ['Ocean Freight', 'Ocean Freight']]) %>
   </div>
     <div class="field">
     *<%= f.label "Preferred language" %>:<br />
@@ -79,7 +79,7 @@
 <% end %>
 </td>
 <td width='300'><table border='1' align='center'><tr> <td width="300" height="100" background="/assets/questions.jpg"> <div class="questions"><center><p style="font-size:22px;
-font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;"> Do you need more information or have a question... Contact us at Admin@MercariAmerica.com</p></center></div></td> <tr><td> <b>Let us buy for you! We can purchase what you are looking for only $24.95 and 4.9%*</b> some restrictions may apply<br><br> <b> How it works: </b> </td><tr> <td width="300" height="100" background="/assets/think.jpg"> <p style="font-size:16px;
+font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;"> Do you need more information or have a question... Contact us at Admin@MercariAmerica.com</p></center></div></td> <tr><td> <b>Let us buy for you! We can purchase what you are looking for only $19.95 and 4.9%*</b> some restrictions may apply<br><br> <b> How it works: </b> </td><tr> <td width="300" height="100" background="/assets/think.jpg"> <p style="font-size:16px;
 font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;">Think of what <br>product you want</p></td><tr> <td width="300" height="100" background="/assets/form.jpg"> <p style="font-size:16px;
 font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;">Fill out the form on the<br> left with as much <br>information as possible. </p></td><tr> <td width="300" height="100" background="/assets/typing.jpg"> <p style="font-size:16px; font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;">You will be assigned to <br>an agent who will get <br>the best price possible</p></td> <tr> <td width="300" height="100" background="/assets/mail.jpg"> <p style="font-size:16px; font-weight:bold;text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;color:white;">We will give you a<br> quote including packing, <br>shipping and export <br>by email </p></td></center></td>
 </table> 
